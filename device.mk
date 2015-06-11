@@ -111,6 +111,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libion
 
+PRODUCT_PACKAGES += \
+    libstlport
+
 #OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -187,10 +190,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     e2fsck
 
-# Platform specific tags
-#
-PRODUCT_TAGS += dalvik.gc.type-precise
-
 # Get the long list of apns
 PRODUCT_COPY_FILES += device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
@@ -201,10 +200,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-Xms=32m \
-    dalvik.vm.dex2oat-Xmx=256m \
-    dalvik.vm.image-dex2oat-Xms=48m \
-    dalvik.vm.image-dex2oat-Xmx=48m \
     dalvik.vm.dex2oat-filter=interpret-only \
     dalvik.vm.image-dex2oat-filter=speed
 
