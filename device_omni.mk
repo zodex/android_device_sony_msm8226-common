@@ -27,3 +27,7 @@ PRODUCT_PACKAGES += \
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
+
+# Omni specific overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    device/sony/yukon-common/overlay-omni
