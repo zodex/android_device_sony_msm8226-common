@@ -170,7 +170,7 @@ PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep \
     thermanager \
-    addrsetup
+    macaddrsetup
 
 #Charger
 PRODUCT_PACKAGES += \
